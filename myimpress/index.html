@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="description" content="impress demo" />
+        <meta name="author" content="loushizhudeng" />
+        <title>陋室烛灯的impress.js学习笔记</title>
+        <link href="css/myimpress.css" rel="stylesheet" />
+    </head>
+    <body class="impress-not-supported">
+        <div class="fallback-message">
+            <p>你的浏览器不支持impress.js</p>
+            <p>请使用最新版的 <b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b> 浏览器。</p>
+        </div>
+        <div id="impress">
+            <div id="step1" class="step" data-x="-1500" data-y="-1500">
+                <div class="header">
+                    第一张幻灯片
+                </div>
+                <div class="content">
+                    <p>这是普普通通的一张幻灯片，背后却有着不普通的技术支持，那就是
+                        <a target="_blank" href="https://github.com/impress/impress.js">impress.js</a>。
+                    </p>
+                </div>
+            </div>
+            <div id="step2" class="step" data-x="0" data-y="-1500">
+                <div class="header">
+                    第二张幻灯片
+                </div>
+                <div class="content">
+                    <p>
+                        使用<strong>impress.js</strong>，不仅可以展示最普通的幻灯片排版，还可以支持各种动态效果。
+                    </p>
+                </div>
+            </div>
+            <div id="step3" class="step" data-x="0" data-y="0">
+                <div class="header">
+                    第三张幻灯片
+                </div>
+                <div class="content">
+                    <p>
+                        要知道，整个演示文稿都可以是动态的，不仅仅是每张幻灯片的内部元素。
+                    </p>
+                </div>
+            </div>
+            <div id="step4" class="step" data-x="-5000" data-y="2500" data-scale="5">
+                <div class="header">
+                    第四张幻灯片
+                </div>
+                <div class="content">
+                    <p>
+                        它可以放大元素。不过要小心放大后会影响其他的幻灯片，所以要注意<strong>data-x</strong>和<strong>data-y</strong>的设置。或许看上去字体没变化，但是留意到刚才幻灯片的切换过程了吗？
+                    </p>
+                </div>
+            </div>
+            <div id="step5" class="step" data-x="-5000" data-y="5000" data-rotate="90" data-scale="5">
+                <div class="header">
+                    第五张幻灯片
+                </div>
+                <div class="content">
+                    <p>
+                        没留意到也不要紧，看看旋转吧。
+                    </p>
+                </div>
+            </div>
+            <div id="step6" class="step" data-x="5000" data-y="5000" data-z="-5000" data-rotate="90" data-scale="5">
+                <div class="header">
+                    第六张幻灯片
+                </div>
+                <div class="content">
+                    <p>
+                        再来个空间迁移。
+                    </p>
+                </div>
+            </div>
+            <div id="step7" class="step" data-x="3000" data-y="3000" data-z="-5000" data-rotate-x="90" data-scale="5">
+                <div class="header">
+                    第七张幻灯片
+                </div>
+                <div class="content">
+                    <p>
+                        试试水平旋转。
+                    </p>
+                </div>
+            </div>
+            <div id="step8" class="step" data-x="3000" data-y="3000" data-z="-5000" data-rotate-y="90" data-scale="5">
+                <div class="header">
+                    第八张幻灯片
+                </div>
+                <div class="content">
+                    <p>
+                        再来个竖直方向的。
+                    </p>
+                </div>
+            </div>
+            <div id="step9" class="step" data-x="3000" data-y="3000" data-z="-5000" data-rotate-z="90" data-scale="5">
+                <div class="header">
+                    第九张幻灯片
+                </div>
+                <div class="content">
+                    <p>
+                        还可以再转。
+                    </p>
+                </div>
+            </div>
+            <div id="overview" class="step" data-x="2500" data-y="2500" data-scale="10">
+            </div>
+        </div>
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+    </body>
+</html>
+

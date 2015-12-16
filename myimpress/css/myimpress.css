@@ -1,0 +1,66 @@
+body {
+    font-family: "Fantasque Sans Mono", "wenquanyi micro hei";
+    min-height: 740px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body     { pointer-events: none; }
+#impress { pointer-events: auto; }
+
+.step {
+    width: 900px;
+    height: 800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+    line-height: 1.5;
+}
+
+
+.header {
+    font-size: 48px;
+    font-weight: bold;
+    border-bottom: 2px solid #0000FF;
+}
+.content {
+    text-indent: 2em;
+    font-size: 36px;
+}
+a {
+    text-decoration: none;
+    color: #0000FF;
+}
+
+
+/* 不支持impress.js时显示的信息 */
+
+.fallback-message {
+    font-family: "Fantasque Sans Mono", "wenquanyi micro hei";
+    line-height: 1.5;
+    display: none;
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid #E4C652;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-disabled .step,
+.impress-not-supported .step {
+    position: relative;
+    opacity: 1;
+    margin: 20px auto;
+}
+
+.impress-not-supported .fallback-message {
+    display: block;
+}
